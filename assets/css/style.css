@@ -1,23 +1,128 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
-p {
-  margin: 0;
+a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(133, 227, 230);
+    border-bottom: 0.3rem solid #bbbcc8;
+    padding: 0.5rem 0;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+    cursor: pointer;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color:coral;
+    color: black
+}
+
+header{
+    background-color: rgb(79, 77, 77);
+    color: rgb(61, 60, 60);
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+.logo-container{
+    background-color:rgb(133, 227, 230);
+}
+nav {
+    margin-bottom: 4rem;
+    padding: 10px;
+    font-size: 3rem;
+
+    @media (min-width: 767px) {
+        padding: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 1rem;
+
+        @media (min-width: 425px) {
+            font-size: 1.25rem;
+        }
+
+        @media (min-width: 767px) {
+            font-size: 1.75rem;
+        }
+        
+        @media (min-width: 1440px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    li {
+        flex: 0 0 auto;
+        margin-right: 10px;
+        text-align: center;
+
+        @media (min-width: 767px) {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    img{
+        width: 40px;
+        margin-right: 2px;
+    }
+}
+
+nav.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 767px) {
+        justify-content: space-between;
+    }
+
+    > a {
+        margin-bottom: 10px;
+
+        @media (min-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .fullwidth {
+        flex: 0 0 100%;
+        justify-content: center;
+
+        @media (min-width: 767px) {
+            flex: 0 1 auto;
+        }
+    }
 }
