@@ -35,7 +35,7 @@ nav a,
     font-size: 1.25rem;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     font-size: 1.5rem;
   }
 
@@ -59,7 +59,7 @@ nav a,
     font-size: 1.25rem;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     font-size: 1.75rem;
   }
 
@@ -119,7 +119,7 @@ nav {
   padding: 10px;
   font-size: 3rem;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     padding: 20px;
   }
 
@@ -137,7 +137,7 @@ nav {
     margin-right: 10px;
     text-align: center;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       flex: 0 0 auto;
       margin-right: 20px;
     }
@@ -167,7 +167,7 @@ nav.flexbox {
   > a {
     margin-bottom: 10px;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       margin-bottom: 0;
     }
   }
@@ -176,7 +176,7 @@ nav.flexbox {
     flex: 0 0 100%;
     justify-content: center;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       flex: 0 1 auto;
     }
   }
@@ -218,8 +218,8 @@ nav.flexbox {
     padding-left: 20px;
 }
 
-/* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
+/* Media query for medium to large screens (769px and above) */
+@media (min-width: 769px) {
   .about-section .profile-picture {
     margin-bottom: 0;
   }
@@ -232,8 +232,8 @@ nav.flexbox {
   }
 }
 
-/* Media query for small screens (up to 767px) */
-@media (max-width: 767px) {
+/* Media query for small screens (up to 768px) */
+@media (max-width: 768px) {
   .about-section .profile-picture {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -277,8 +277,8 @@ nav.flexbox {
   justify-content: center;
 }
 
-/* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
+/* Media query for medium to large screens (769px and above) */
+@media (min-width: 769px) {
   .education-section .university-logo {
     margin-bottom: 0;
   }
@@ -291,8 +291,8 @@ nav.flexbox {
   }
 }
 
-/* Media query for small screens (up to 767px) */
-@media (max-width: 767px) {
+/* Media query for small screens (up to 768px) */
+@media (max-width: 768px) {
   .education-section .university-logo {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -357,8 +357,8 @@ nav.flexbox {
   text-align: left;
 }
 
-/* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
+/* Media query for medium to large screens (769px and above) */
+@media (min-width: 769px) {
   .work-experience-section .work-experience-content {
     display: flex;
     flex-wrap: wrap;
@@ -372,8 +372,8 @@ nav.flexbox {
   }
 }
 
-/* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
+/* Media query for medium to large screens (769px and above) */
+@media (min-width: 769px) {
   .work-experience-section .work-experience-content {
     display: flex;
     flex-wrap: wrap;
@@ -387,8 +387,8 @@ nav.flexbox {
   }
 }
 
-/* Media query for small screens (up to 767px) */
-@media (max-width: 767px) {
+/* Media query for small screens (up to 768px) */
+@media (max-width: 768px) {
   .work-experience-section .work-entry,
   .work-experience-section .project-entry {
     width: 100%;
@@ -411,7 +411,7 @@ nav.flexbox {
     padding: 0 80px;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     padding: 0 100px;
   }
 
@@ -419,7 +419,7 @@ nav.flexbox {
     padding: 0 150px;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 }
@@ -502,8 +502,8 @@ nav.flexbox {
   margin-right: 10px;
 }
 
-/* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
+/* Media query for medium to large screens (769px and above) */
+@media (min-width: 769px) {
   .contact-content {
     flex-direction: row;
     justify-content: center;
