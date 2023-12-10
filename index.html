@@ -1,29 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- Title -->
-    <title>Vivek Iyer // Web Developer</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="flexbox">
-        <div class="logo-container">
-          <img src="./assets/images/Vivek Iyer Logo.png" alt="Logo" />
-          <span class="name">Vivek Iyer</span>
-        </div>
-        <ul class="fullwidth">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work-experience">Work-Exp</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha384-LTVPFPvhGHi6e9c3zgkF5ZyRvD/6Ep6UpQhK5W5I3/LC7gg6SzLRR8/A6gDg11rN" crossorigin="anonymous" />
+  <!-- Title -->
+  <title>Vivek Iyer // Web Developer</title>
+</head>
+
+<body>
+  <header>
+    <nav class="flexbox">
+      <div class="logo-container">
+        <img src="./assets/images/Vivek Iyer Logo.png" alt="Logo" />
+        <span class="name">Vivek Iyer</span>
+      </div>
+      <ul class="fullwidth">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-experience">Work-Exp</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="./assets/images/datacenter-nextgen.jpg" class="float-left" alt="datacenter-nextgen" />
+  </div>
+
+  <!-- About Me Section -->
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2><img src="./assets/images/Image_Person.png" alt="Small Icon" class="icon" />About<span class="highlight">
+          Me</span></h2>
+      <div class="about-content">
+        <img src="./assets/images/Vivek Avatar.png" alt="Profile Picture" class="profile-picture" />
+        <p>
+          "Welcome to my website! I'm Vivek Iyer, a dedicated infrastructure engineer with over 15 years
+          of hands-on experience. As I navigate the ever-evolving landscape of technology,
+          I'm currently immersing myself in the world of web development.
+          My goal is to leverage these skills to enhance the presentation and accessibility of data,
+          providing a more engaging and seamless experience for users."
+        </p>
+      </div>
+    </div>
+    <div class="contact-section">
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:vivek370@gmail.com">vivek370@gmail.com</a></li>
+        <li>Mobile: <a href="tel:+44 xxxx xxx xxx">+44 xxxx xxx xxx</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/svivekiyer/">LinkedIn Profile</a></li>
+      </ul>
+      <a href="https://github.com/your-username" class="resume-button">Resume Link</a>
+    </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <section id="education" class="education-section">
+    <div class="container">
+      <h2><img src="./assets/images/Education_Icon.png" alt="Education Icon" class="education_icon" />My<span
+          class="highlight"> Education</span></h2>
+      <div class="education-content">
+        <img src="./assets/images/Acropolis Institute.jpg" alt="University Logo" class="university-logo" />
+        <p>
+          I pursued my degree in Computer Science from <a href="https://aitr.ac.in/">AITR Indore</a>,India.
+          Graduating in 2009, I gained valuable knowledge and skills that have been instrumental in my professional
+          career.Link to College: 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <!-- Work Experience and Projects Section -->
+  <section id="work-experience" class="work-experience-section">
+    <div class="container">
+      <h2><img src="./assets/images/work_Image.png" alt="Work Icon" class="work_icon" />Work<span
+        class="highlight"> Experience</span></h2>
+      <div class="work-experience-content">
+        <ul class="list-component">
+          <li class="__item">
+            <div class="card-component">
+              <h2 class="__year">2009 - 2011</h2>
+              <h1 class="__title">System Engineer-IBM Pvt Ltd</h1>
+            </div>
+          </li>
+          <li class="__item">
+            <div class="card-component">
+              <h2 class="__year">2011 - 2013</h2>
+              <h1 class="__title">Senior Engineer-Hewlett Packard</h1>
+            </div>
+          <li class="__item">
+            <div class="card-component">
+              <h2 class="__year">2013 - 2018</h2>
+              <h1 class="__title">Senior Design Engineer-Thomson Reuters</h1>
+            </div>
+          <li class="__item">
+            <div class="card-component">
+              <h2 class="__year">2018 - 2023(Ongoing)</h2>
+              <h1 class="__title">Staff Enterprise Engineer-Linkedin Tech</h1>
+            </div>
+          </li>
         </ul>
-      </nav>
-    </header>
-  </body>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <hr class="separator">
+    <p>Designed with <span aria-label="love">❤️️</span> by Vivek Iyer</p>
+  </footer>
+
+</body>
+
 </html>

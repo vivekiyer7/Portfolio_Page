@@ -1,128 +1,436 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 html {
-    font-size: 100%;
-    box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: white;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-a {
-    position: relative;
-    text-decoration: none;
-    color: rgb(133, 227, 230);
-    border-bottom: 0.3rem solid #bbbcc8;
-    padding: 0.5rem 0;
-    letter-spacing: 0.04rem;
-    transition: 0.2s;
-    cursor: pointer;
-    font-style: italic;
-    font-family: sans-serif;
+.fullwidth a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(133, 227, 230);
+  border-bottom: 0.3rem solid #bbbcc8;
+  padding: 0.5rem 0;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+  cursor: pointer;
+  font-style: italic;
+  font-family: sans-serif;
 }
 
-a:hover {
-    background-color:coral;
-    color: black
+.fullwidth a:hover {
+  background-color: coral;
+  color: black;
 }
 
-header{
-    background-color: rgb(79, 77, 77);
-    color: rgb(61, 60, 60);
-    font-family: sans-serif;
-    font-style: oblique;
+header {
+  background-color: rgb(79, 77, 77);
+  color: rgb(61, 60, 60);
+  font-family: sans-serif;
+  font-style: oblique;
 }
 
-.logo-container{
-    background-color:rgb(133, 227, 230);
+.logo-container {
+  background-color: rgb(133, 227, 230);
 }
 nav {
-    margin-bottom: 4rem;
-    padding: 10px;
-    font-size: 3rem;
+  margin-bottom: 4rem;
+  padding: 10px;
+  font-size: 3rem;
 
-    @media (min-width: 767px) {
-        padding: 20px;
-    }
+  @media (min-width: 767px) {
+    padding: 20px;
+  }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    a {
-        font-size: 1rem;
-
-        @media (min-width: 425px) {
-            font-size: 1.25rem;
-        }
-
-        @media (min-width: 767px) {
-            font-size: 1.75rem;
-        }
-        
-        @media (min-width: 1440px) {
-            font-size: 2.5rem;
-        }
-    }
-
-    li {
-        flex: 0 0 auto;
-        margin-right: 10px;
-        text-align: center;
-
-        @media (min-width: 767px) {
-            flex: 0 0 auto;
-            margin-right: 20px;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    img{
-        width: 40px;
-        margin-right: 2px;
-    }
-}
-
-nav.flexbox {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+  }
+
+  a {
+    font-size: 1rem;
+
+    @media (min-width: 425px) {
+      font-size: 1.25rem;
+    }
 
     @media (min-width: 767px) {
-        justify-content: space-between;
+      font-size: 1.75rem;
     }
 
-    > a {
-        margin-bottom: 10px;
+    @media (min-width: 1440px) {
+      font-size: 2.5rem;
+    }
+  }
 
-        @media (min-width: 767px) {
-            margin-bottom: 0;
-        }
+  li {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+
+    @media (min-width: 767px) {
+      flex: 0 0 auto;
+      margin-right: 20px;
     }
 
-    .fullwidth {
-        flex: 0 0 100%;
-        justify-content: center;
-
-        @media (min-width: 767px) {
-            flex: 0 1 auto;
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
+  img {
+    width: 40px;
+    margin-right: 2px;
+  }
 }
+
+nav.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 767px) {
+    justify-content: space-between;
+  }
+
+  > a {
+    margin-bottom: 10px;
+
+    @media (min-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .fullwidth {
+    flex: 0 0 100%;
+    justify-content: center;
+
+    @media (min-width: 767px) {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+/* Hero section styles Start */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: -4rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 25px;
+  border: 2px solid #d28bd7;
+  box-sizing: border-box;
+}
+/* Hero section styles End */
+
+/* About Me Style Start */
+/* About Me Section Styles Start */
+.about-section h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+}
+
+.about-section h2 .highlight {
+    color: #e83df7;
+}
+
+.about-section .icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.about-section .profile-picture {
+  border: 2px solid #011aff;
+  border-radius: 50%;
+  margin-right: 20px;
+  max-width: 90%;
+  position: relative;
+  justify-content: center;
+}
+
+/* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
+  .about-section .profile-picture {
+    margin-bottom: 0;
+  }
+
+  .about-section .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+/* Media query for small screens (up to 767px) */
+@media (max-width: 767px) {
+  .about-section .profile-picture {
+    margin: 0 auto; /* Center the profile picture */
+    margin-bottom: 20px; /* Add margin for better spacing */
+  }
+
+  .about-section .about-content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center; /* Center text in the content on smaller screens */
+  }
+}
+
+.about-section p,
+.contact-section li,
+.resume-button,
+.education-section p,
+.card-component .__title,
+.card-component .__year{
+  font-size: 1rem;
+
+  @media (min-width: 425px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.5rem;
+  }
+}
+
+/* Contact Section Styles */
+.contact-section {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #011aff;
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #001a66;
+}
+
+/* About Me Style Finish*/
+
+/* Education Section Style Start*/
+.education-section h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+}
+
+.education-section h2 .highlight {
+    color: #e83df7;
+}
+
+.education-section .icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.education-section .university-logo {
+  border: 2px solid #011aff;
+  border-radius: 90%;
+  margin-right: 20px;
+  max-width: 40%;
+  position: relative;
+  justify-content: center;
+}
+
+/* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
+  .education-section .university-logo {
+    margin-bottom: 0;
+  }
+
+  .education-section .education-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+/* Media query for small screens (up to 767px) */
+@media (max-width: 767px) {
+  .education-section .university-logo {
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+  }
+
+  .education-section .education-content {
+    flex-direction: column;
+    text-align: center; 
+  }
+}
+
+/* Work Experience and Projects Section Styles Start */
+.work-experience-section h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+  }
+  
+  .work-experience-section h2 .highlight {
+    color: #e83df7;
+  }
+  
+  .work-experience-section .work_icon {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .work-experience-section .list-component {
+    border-left: 1px solid gray;
+    list-style: none;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+  
+  .work-experience-section .list-component .__item {
+    background: url(https://www.computerhope.com/issues/pictures/bullet.gif) no-repeat top left;
+    background-position: top left;
+    padding: 0 0 4px 60px;
+    margin-left: 1em;
+    position: relative;
+    right: 67px;
+    margin-bottom: 10px;
+    top: 10px;
+  }
+  
+  .work-experience-section .card-component {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 450px;
+    font-family: Arial;
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .card-component .__year .__title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .card-component{
+    background-color: rgb(174, 247, 223);
+  }
+  .card-component .__title {
+    text-align: center;
+  }
+  
+  .card-component .__text {
+    color: gray;
+  }
+  
+  .work-experience-section .work-experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  
+  /* Media query for medium to large screens (768px and above) */
+  @media (min-width: 768px) {
+    .work-experience-section .work-experience-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Ensure space between cards */
+    }
+  
+    .work-experience-section .work-entry,
+    .work-experience-section .project-entry {
+      flex: 0 0 48%; /* Adjust the width of each entry as needed */
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
+    .work-experience-section .work-experience-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Ensure space between cards */
+    }
+  
+    .work-experience-section .work-entry,
+    .work-experience-section .project-entry {
+      flex: 0 0 48%; /* Adjust the width of each entry as needed */
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for small screens (up to 767px) */
+  @media (max-width: 767px) {
+    .work-experience-section .work-entry,
+    .work-experience-section .project-entry {
+      width: 100%; /* Full width for small screens */
+      margin-bottom: 20px;
+    }
+  }
+  /* Work Experience and Projects Section Styles End */
+
+  
+/* Footer styles */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+.separator {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+/* Footer styles */
