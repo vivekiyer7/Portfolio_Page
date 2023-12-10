@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: white;
+  background-color: #f4f4f4;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -19,34 +19,101 @@ body {
   box-sizing: inherit;
 }
 
+/* Global styles for ParaGraph Font */
+nav a,
+.about-section p,
+.contact-section li,
+.resume-button,
+.education-section p,
+.card-component .__title,
+.card-component .__year,
+.projects-section .project-info,
+.contact-section p {
+  font-size: 1rem;
+
+  @media (min-width: 425px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2rem;
+  }
+}
+
+/* Global styles for Heading Font */
+
+.about-section h2,
+.education-section h2,
+.work-experience-section h2,
+.projects-section h2,
+.contact-section h2 {
+  font-size: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+
+  @media (min-width: 425px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.5rem;
+  }
+}
+
+.about-section h2 .highlight,
+.education-section h2 .highlight,
+.work-experience-section h2 .highlight,
+.projects-section h2 .highlight,
+.contact-section h2 .highlight {
+  color: #e83df7;
+}
+
+.about-section .about_icon,
+.education-section .education_icon,
+.work-experience-section .work_icon,
+.projects-section .project_icon,
+.contact-section .contact_icon {
+  width: 35px;
+  margin-right: 10px;
+}
+
+/* Header section styles Start */
 .fullwidth a {
   position: relative;
   text-decoration: none;
-  color: rgb(133, 227, 230);
-  border-bottom: 0.3rem solid #bbbcc8;
+  color: rgb(240, 239, 239);
   padding: 0.5rem 0;
   letter-spacing: 0.04rem;
   transition: 0.2s;
   cursor: pointer;
-  font-style: italic;
-  font-family: sans-serif;
 }
 
 .fullwidth a:hover {
   background-color: coral;
   color: black;
+  font-style: italic;
+  border-bottom: 0.3rem solid #1b1b1c;
 }
 
 header {
-  background-color: rgb(79, 77, 77);
-  color: rgb(61, 60, 60);
+  background-color: rgb(93, 93, 93);
+  color: rgb(240, 239, 239);
   font-family: sans-serif;
-  font-style: oblique;
+  font-style: normal;
 }
 
 .logo-container {
-  background-color: rgb(133, 227, 230);
+  font-size: 55px;
 }
+
 nav {
   margin-bottom: 4rem;
   padding: 10px;
@@ -65,22 +132,6 @@ nav {
     justify-content: center;
   }
 
-  a {
-    font-size: 1rem;
-
-    @media (min-width: 425px) {
-      font-size: 1.25rem;
-    }
-
-    @media (min-width: 767px) {
-      font-size: 1.75rem;
-    }
-
-    @media (min-width: 1440px) {
-      font-size: 2.5rem;
-    }
-  }
-
   li {
     flex: 0 0 auto;
     margin-right: 10px;
@@ -95,6 +146,7 @@ nav {
       margin-right: 0;
     }
   }
+
   img {
     width: 40px;
     margin-right: 2px;
@@ -148,25 +200,10 @@ nav.flexbox {
   border: 2px solid #d28bd7;
   box-sizing: border-box;
 }
+
 /* Hero section styles End */
 
-/* About Me Style Start */
 /* About Me Section Styles Start */
-.about-section h2 {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: xx-large;
-}
-
-.about-section h2 .highlight {
-    color: #e83df7;
-}
-
-.about-section .icon {
-  width: 30px;
-  margin-right: 10px;
-}
-
 .about-section .profile-picture {
   border: 2px solid #011aff;
   border-radius: 50%;
@@ -193,50 +230,19 @@ nav.flexbox {
 /* Media query for small screens (up to 767px) */
 @media (max-width: 767px) {
   .about-section .profile-picture {
-    margin: 0 auto; /* Center the profile picture */
-    margin-bottom: 20px; /* Add margin for better spacing */
-  }
+    margin: 0 auto;
+    margin-bottom: 20px;
 
-  .about-section .about-content {
-    flex-direction: column; /* Stack content vertically on smaller screens */
-    text-align: center; /* Center text in the content on smaller screens */
-  }
-}
-
-.about-section p,
-.contact-section li,
-.resume-button,
-.education-section p,
-.card-component .__title,
-.card-component .__year{
-  font-size: 1rem;
-
-  @media (min-width: 425px) {
-    font-size: 1.25rem;
-  }
-
-  @media (min-width: 767px) {
-    font-size: 1.75rem;
-  }
-
-  @media (min-width: 1440px) {
-    font-size: 2.5rem;
+    .about-section .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }
-
-/* Contact Section Styles */
-.contact-section {
+/* Resume Section Styles */
+.resume-section {
   text-align: center;
   margin-top: 5px;
-}
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-list li {
-  margin-bottom: 10px;
 }
 
 .resume-button {
@@ -257,21 +263,6 @@ nav.flexbox {
 /* About Me Style Finish*/
 
 /* Education Section Style Start*/
-.education-section h2 {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: xx-large;
-}
-
-.education-section h2 .highlight {
-    color: #e83df7;
-}
-
-.education-section .icon {
-  width: 30px;
-  margin-right: 10px;
-}
-
 .education-section .university-logo {
   border: 2px solid #011aff;
   border-radius: 90%;
@@ -298,123 +289,223 @@ nav.flexbox {
 /* Media query for small screens (up to 767px) */
 @media (max-width: 767px) {
   .education-section .university-logo {
-    margin: 0 auto; 
-    margin-bottom: 20px; 
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .education-section .education-content {
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
   }
 }
 
 /* Work Experience and Projects Section Styles Start */
-.work-experience-section h2 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: xx-large;
-  }
-  
-  .work-experience-section h2 .highlight {
-    color: #e83df7;
-  }
-  
-  .work-experience-section .work_icon {
-    width: 40px;
-    margin-right: 10px;
-  }
-  
-  .work-experience-section .list-component {
-    border-left: 1px solid gray;
-    list-style: none;
-    margin-left: 10px;
-    padding-top: 20px;
-  }
-  
-  .work-experience-section .list-component .__item {
-    background: url(https://www.computerhope.com/issues/pictures/bullet.gif) no-repeat top left;
-    background-position: top left;
-    padding: 0 0 4px 60px;
-    margin-left: 1em;
-    position: relative;
-    right: 67px;
-    margin-bottom: 10px;
-    top: 10px;
-  }
-  
-  .work-experience-section .card-component {
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 1em;
-    max-width: 450px;
-    font-family: Arial;
-    position: relative;
-    bottom: 20px;
-  }
-  
-  .card-component .__year .__title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .card-component{
-    background-color: rgb(174, 247, 223);
-  }
-  .card-component .__title {
-    text-align: center;
-  }
-  
-  .card-component .__text {
-    color: gray;
-  }
-  
+.work-experience-section .list-component {
+  border-left: 1px solid gray;
+  list-style: none;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.work-experience-section .list-component .__item {
+  background: url(https://www.computerhope.com/issues/pictures/bullet.gif)
+    no-repeat top left;
+  background-position: top left;
+  padding: 0 0 4px 60px;
+  margin-left: 1em;
+  position: relative;
+  right: 67px;
+  margin-bottom: 10px;
+  top: 10px;
+}
+
+.work-experience-section .card-component {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 450px;
+  font-family: Arial;
+  position: relative;
+  bottom: 20px;
+}
+
+.card-component .__year .__title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card-component {
+  background-color: rgb(174, 247, 223);
+}
+
+.card-component .__title {
+  text-align: center;
+}
+
+.card-component .__text {
+  color: gray;
+}
+
+.work-experience-section .work-experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
   .work-experience-section .work-experience-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  
-  /* Media query for medium to large screens (768px and above) */
-  @media (min-width: 768px) {
-    .work-experience-section .work-experience-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; /* Ensure space between cards */
-    }
-  
-    .work-experience-section .work-entry,
-    .work-experience-section .project-entry {
-      flex: 0 0 48%; /* Adjust the width of each entry as needed */
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Media query for medium to large screens (768px and above) */
-@media (min-width: 768px) {
-    .work-experience-section .work-experience-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; /* Ensure space between cards */
-    }
-  
-    .work-experience-section .work-entry,
-    .work-experience-section .project-entry {
-      flex: 0 0 48%; /* Adjust the width of each entry as needed */
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Media query for small screens (up to 767px) */
-  @media (max-width: 767px) {
-    .work-experience-section .work-entry,
-    .work-experience-section .project-entry {
-      width: 100%; /* Full width for small screens */
-      margin-bottom: 20px;
-    }
-  }
-  /* Work Experience and Projects Section Styles End */
 
+  .work-experience-section .work-entry,
+  .work-experience-section .project-entry {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
+  .work-experience-section .work-experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .work-experience-section .work-entry,
+  .work-experience-section .project-entry {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for small screens (up to 767px) */
+@media (max-width: 767px) {
+  .work-experience-section .work-entry,
+  .work-experience-section .project-entry {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Work Experience Section Styles End */
+
+/* Projects Section Styles Start */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+
+  @media (min-width: 425px) {
+    padding: 0 80px;
+  }
+
+  @media (min-width: 767px) {
+    padding: 0 100px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 150px;
+  }
   
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-item {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.project-item img {
+  max-width: 100%;
+  max-height: 280px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+/* Contact Me Section Styles */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-content .contact-logo {
+  border: 2px solid #011aff;
+  border-radius: 90%;
+  margin-bottom: 20px;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.contact-section p {
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Media query for medium to large screens (768px and above) */
+@media (min-width: 768px) {
+  .contact-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* Footer styles */
 .footer {
   padding: 30px;
@@ -433,4 +524,5 @@ nav.flexbox {
   border: 1px solid #ccc;
   margin: 10px 0;
 }
+
 /* Footer styles */
