@@ -158,8 +158,9 @@ nav.flexbox {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 930px) {
     justify-content: space-between;
   }
 
@@ -207,10 +208,14 @@ nav.flexbox {
 .about-section .profile-picture {
   border: 2px solid #011aff;
   border-radius: 50%;
-  margin-right: 20px;
-  max-width: 90%;
+  margin:0 auto;
+  max-width: 70%;
+  display: block;
   position: relative;
-  justify-content: center;
+}
+
+.about-section p{
+    padding-left: 20px;
 }
 
 /* Media query for medium to large screens (768px and above) */
