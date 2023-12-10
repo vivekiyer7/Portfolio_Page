@@ -26,11 +26,11 @@ Table of Contents
 
 Include a screenshot or multiple screenshots showcasing your project.
 
-![Screenshot1](/Portfolio_Page/assets/images/Deployed_Page_1.png)
-![Screenshot2](/Portfolio_Page/assets/images/Deployed_Page_2.png)
-![Screenshot3](/Portfolio_Page/assets/images/Deployed_Page_3.png)
-![Screenshot4](/Portfolio_Page/assets/images/Deployed_Page_4.png)
-![Screenshot5](/Portfolio_Page/assets/images/Deployed_Page_5.png)
+![Screenshot1](/assets/images/Deployed_Page_1.png)
+![Screenshot2](/assets/images/Deployed_Page_2.png)
+![Screenshot3](/assets/images/Deployed_Page_3.png)
+![Screenshot4](/assets/images/Deployed_Page_4.png)
+![Screenshot5](/assets/images/Deployed_Page_5.png)
 
 ## Deployment
 
